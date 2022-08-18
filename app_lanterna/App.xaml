@@ -3,6 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app_lanterna.App">
     <Application.Resources>
+        <ResourceDictionary>
 
+            <Style x:Key="fonte_custom_titulo" TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="Penguin-Regular.ttf#Penguin-Regular" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="#ffffff" />
+            </Style>
+
+            <Style x:Key="fonte_custom_texto" TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String"
+                                    Android="Cute-Notes.ttf#Cute-Notes" />
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="#ffffff" />
+            </Style>
+
+            <Style x:Key="titulo" TargetType="Label" BaseResourceKey="fonte_custom_titulo">
+                <Setter Property="FontSize" Value="60"/>
+            </Style>
+
+            <Style x:Key="subtitulo" TargetType="Label" BaseResourceKey="fonte_custom_texto">
+                <Setter Property="FontSize" Value="24"/>
+            </Style>
+
+            <Style x:Key="texto" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="FontSize" Value="Medium" />
+            </Style>
+
+            <Style x:Key="texto_branco" TargetType="Label" BaseResourceKey="texto">
+                <Setter Property="TextColor" Value="#ffffff"/>
+            </Style>
+
+            <Style x:Key="texto_cinza" TargetType="Label" BaseResourceKey="texto">
+                <Setter Property="TextColor" Value="Gray"/>
+            </Style>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
