@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="app_lanterna.MainPage">
+             x:Class="app_lanterna.MainPage"
+             BackgroundColor="#232323">
 
-    <Grid BackgroundColor="#232323" RowDefinitions="100, 200, *, *, *, *, *" ColumnDefinitions="*, *">
+    <Grid RowDefinitions="100, 200, *, *, *, *, *" ColumnDefinitions="*, *">
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
                Text="Lanterna+" Style="{ StaticResource titulo }"
         />
