@@ -12,7 +12,7 @@
                      x:Name="bnt_on_off" MinimumHeightRequest="360"
                      MinimumWidthRequest="821" VerticalOptions="Start"
                      HorizontalOptions="Center" Aspect="AspectFill"
-                     BackgroundColor="#232323"
+                     BackgroundColor="#232323" Clicked="bnt_on_off_Clicked"
         />
 
         <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
@@ -25,8 +25,8 @@
         <Label Grid.Row="5" Grid.Column="0" Text="Fonte de Energia:" Style="{ StaticResource texto_cinza }" />
 
         <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_porcentagem" Style="{ StaticResource texto_branco }" />
-        <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_status" Style="{ StaticResource texto_branco }" />
-        <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_fonte" Style="{ StaticResource texto_branco }" />
+        <Label Grid.Row="4" Grid.Column="1" x:Name="lbl_status" Style="{ StaticResource texto_branco }" />
+        <Label Grid.Row="5" Grid.Column="1" x:Name="lbl_fonte" Style="{ StaticResource texto_branco }" />
 
         <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
                x:Name="lbl_bateria_aviso" Style="{ StaticResource texto_branco }"
