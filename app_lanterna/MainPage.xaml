@@ -3,22 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="app_lanterna.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to App Lanterna" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+    <Grid BackgroundColor="#232323" RowDefinitions="100, 200, *, *, *, *, *" ColumnDefinitions="*, *">
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               Text="Lanterna+" Style="{ StaticResource titulo }"
+        />
+
+        <ImageButton Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                     x:Name="bnt_on_off" MinimumHeightRequest="360"
+                     MinimumWidthRequest="821" VerticalOptions="Start"
+                     HorizontalOptions="Center" Aspect="AspectFill"
+                     BackgroundColor="#232323"
+        />
+
+        <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+               HorizontalOptions="Center" Text="SITUACAO DA BATERIA"
+               Style="{ StaticResource subtitulo }"
+        />
+
+        <Label Grid.Row="3" Grid.Column="0" Text="Carga Restante:" Style="{ StaticResource texto_cinza }" />
+        <Label Grid.Row="4" Grid.Column="0" Text="Status da Bateria:" Style="{ StaticResource texto_cinza }" />
+        <Label Grid.Row="5" Grid.Column="0" Text="Fonte de Energia:" Style="{ StaticResource texto_cinza }" />
+
+        <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_porcentagem" Style="{ StaticResource texto_branco }" />
+        <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_status" Style="{ StaticResource texto_branco }" />
+        <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_fonte" Style="{ StaticResource texto_branco }" />
+
+        <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+               x:Name="lbl_bateria_aviso" Style="{ StaticResource texto_branco }"
+               FontAttributes="Italic" HorizontalOptions="Center" TextColor="red"
+        />
+    </Grid>
 
 </ContentPage>
