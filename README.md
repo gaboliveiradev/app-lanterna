@@ -10,7 +10,7 @@
 
 <b> Objetivo do APP:</b><br>
 ``O objetivo do app é acender o flash da câmera para utilizarmos como lanterna. Toda vez que o flash for ativado ou desativado, vamos fazer o telefone vibrar.``<br><br>
-``Também exibiremos as informações da bateria como porcentagem de carga restante, estado da bateria, fonte de energia``<br>
+``Também exibimos as informações da bateria como porcentagem de carga restante, estado da bateria, fonte de energia``<br>
 
 <h2>Requisistos</h2>
 <strong>● Adicionar imagens ao projeto.</strong><br>
